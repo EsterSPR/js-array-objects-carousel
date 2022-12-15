@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    width: 50vw;
+    height: 50vh;
+    position:relative;
+}
+
+.item{
+    display: none;
+}
+
+.item-slider, .item, img{
+    height: 100%
+}
+
+.item img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.arrow{
+    position: absolute;
+    width: 40px;
+    background-color: rgba(174, 174, 174, 0.509);
+    border-radius: 50px;
+    font-weight: 800; 
+    left: 50%;
+    font-size: 30px;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+}
+
+.next{
+    top: 5px; 
+}
+
+.prev{
+    bottom: 5px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(174, 174, 174, 1);   
+}
+
+.item.active{
+    display: block;
+}
+
+.circles-container{
+    display: flex;
+    justify-content: center;
+}
+
+.circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(174, 174, 174, 0.509);
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.circle.active, .circle:hover{
+    background-color: rgba(174, 174, 174, 1); 
+}
+
+/* #buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.circle-button{
+    border-radius: 50%;
+    margin: 15px 10px 0 10px;
+    color: #fff;
+    border: none;
+    font-size: 25pt;
+}
+
+#play {
+    background-color: dodgerblue;
+    padding: 10px 14px 10px 16px;
+    transition: 0.3s;
+}
+
+#play:hover {
+    background-color: rgb(22, 122, 222);
+    cursor: pointer;
+}
+
+#pause {
+    background-color: orange;
+    padding: 10px 18px;
+    transition: 0.3s;
+}
+
+#pause:hover {
+    background-color: rgb(208, 137, 4);
+    cursor: pointer;
+} */
