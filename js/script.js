@@ -82,7 +82,13 @@ function slideNext(){
         items[itemActive].classList.add('active');
         circles[itemActive].classList.add('active');
     } else {
+        items[itemActive].classList.remove('active');
+        circles[itemActive].classList.remove('active');
         
+        itemActive = 0;
+
+        items[itemActive].classList.add('active');
+        circles[itemActive].classList.add('active');
     }
 }
 
@@ -95,6 +101,12 @@ function slidePrev(){
         items[itemActive].classList.add('active');
         circles[itemActive].classList.add('active');
     } else {
+        items[itemActive].classList.remove('active');
+        circles[itemActive].classList.remove('active');
         
+        itemActive = 4;
+
+        items[itemActive].classList.add('active');
+        circles[itemActive].classList.add('active');
     }
 }
