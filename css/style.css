@@ -19,6 +19,7 @@
 
 .item{
     display: none;
+    position: relative;
 }
 
 .item-slider, .item, img{
@@ -28,6 +29,18 @@
 .item img{
     width: 100%;
     object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    left: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 .arrow{
